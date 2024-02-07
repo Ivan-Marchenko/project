@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomepageController!{% endblock %}
+
+{% block body %}
+    <center>
+    <div class="header__logo">
+        <a class="header__logo-link" href="/ru">
+            <img class="header__logo-img" src=https://passimpay.io/svg/logo_en.svg height="40px" alt="">
+            <img class="header__logo-img-small" src="/img/header_change/svg/logo/logo-4.svg" alt="">
+        </a>
+    </div>
+    </center>
+
+    <section class="intro mb-section-rule">
+        <div class="intro__container-big">
+            <div class="mob-bg-bus">
+                <div class="intro__inner bus">
+                    <div class="abaut-main__content business">
+                        <h1 class="abaut-main__content-title business">Криптовалютный платежный шлюз для бизнеса</h1>
+                        <ul class="abaut-main__content-list business">
+                            <li class="abaut-item1">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">50+ криптовалют</span>
+                            </li>
+                            <li class="abaut-item4">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">Статичные адреса для депозитов</span>
+                            </li>
+                            <li class="abaut-item2">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">Автоматическая конвертация криптовалют</span>
+                            </li>
+                            <li class="abaut-item5">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">Индивидуальный прайс для каждого проекта</span>
+                            </li>
+                            <li class="abaut-item3">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">Кастомные API и плагины для CMS</span>
+                            </li>
+                            <li class="abaut-item6">
+							<span>
+								<img src="./svg/orange-circle.svg" alt="">
+							</span>
+                                <span class="abaut-main__content-text business">Оплаты в один клик через Metamask и другие Web3-кошельки</span>
+                            </li>
+                        </ul>
+                        <div class="home-buisnes-intro__buttons">
+                            <button id="contact-form-open" class="home-buisnes-intro__button-contact button-transparent btn3" type="button" style="--x: 96.0625px; --y: 27.65625px;">
+                                <span class="button-transparent__text">Напишите нам</span>
+                                <span class="button-transparent__icon">
+								<img src="./svg/arrow_button-2.svg" alt="">
+							</span>
+                            </button>
+                            <a href="https://account.passimpay.io" class="home-buisnes-intro__button-started button-orange btn1" style="--x: 50.84375px; --y: 44.65625px;">
+                                <span class="button-orange__text">Начать</span>
+                                <span class="button-orange__icon">
+								<img src="./svg/arrow-right.svg" alt="">
+							</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="intro__bg bus">
+                        <div class="padd_intro_bg bus">
+                            <div class="inner_intro_bg per">
+                                <div class="main-lot">
+                                    <lottie-player autoplay="" loop="" src="/illustration/background.json" speed="1" background="transparent"></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

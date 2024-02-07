@@ -1,0 +1,49 @@
+<div id="contact_form-block" class="contact-form modal-background-rule" style="display: none;">
+    <div class="contact-form__wrapper modal-frame-rule">
+        <div class="contact-form__body">
+
+            <button class="btn_close_modal" style="--x: 15.5px; --y: 16px;"></button>
+
+            <div class="contact-form__title">Обратная связь</div>
+            <form action="/feedback" method="post" name="contact_form" id="contact-form">
+                <input class="contact-form__input" type="text" name="title" id="" placeholder="Название проекта" required="">
+                <textarea class="contact-form__textarea" name="description" id="" style="resize: none;" placeholder="Описание Вашего проекта" required=""></textarea>
+                <div class="contact-form__grid">
+
+                    <div class="contact-form__input-shell">
+                        <input class="contact-form__input" type="text" name="telegram" id="" placeholder="Ваш Telegram" required="">
+                    </div>
+                    <div class="contact-form__input-shell">
+                        <input class="contact-form__input" type="email" name="mail" id="" placeholder="Активный e-mail" required="">
+                    </div>
+                    <div class="contact-form__input-shell">
+                        <input class="contact-form__input" type="url" name="url" id="" placeholder="Ссылка на проект" required="">
+                    </div>
+                    <div class="contact-form__input-shell">
+                        <select name="income"  class="contact-form__input">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="contact-form__text">Нажимая кнопку "Отправить", Вы даете свое согласие Администрации PassimPay на обработку и хранение Ваших персональных и иных данных, указанных в приведенной выше форме.</p>
+                <button class="contact-form__button button-blue btn1" type="submit" style="--x: 298.5px; --y: 1.5px;">Отправить</button>
+
+                <input type="hidden" name="_csrf_token" value="4f93ff55cc17f8.zR-cBUra67qOE8tWTz7KWA8kwz0-HiyKlTscYNg0lFI.r3CvbH2Y08rffqJkB2meB30c9UVnZknL21J5CY4H1iv5ashzOZ_c3OZBpA">
+
+                <script src="https://www.google.com/recaptcha/api.js?render=6LfIk2ckAAAAAMiEdT9BYF2ytgv4h3tMbOa7QDSq"></script>
+                <script>
+                    grecaptcha.ready(function () {
+                        grecaptcha.execute('6LfIk2ckAAAAAMiEdT9BYF2ytgv4h3tMbOa7QDSq', { action: 'feedback' }).then(function (token) {
+                            document.getElementById('ed456ybhw45ya').value = token;
+                        });
+                    });
+                </script>
+                <input type="hidden" name="ed456ybhw45ya" id="ed456ybhw45ya" value="03AFcWeA5J29sz7WlSJfIcS8KtexoyMkzQnPb5MYOoaMJr1_ygfkMJxMImMmy6u1D5Urj47H-TreN-YDAVe6yft5Mt8x-32CMgr9CRzxmsseIobH-Me7cRv7jQVx1KCe6WO0SpZQK3SMg9pYzmmq1o977GrQI6EcNdgfATx38RcaVCZHhJxMWo4L6NoGr_AtwqSnyRlNLO3LAXubkCMsT5YyA2rGdoEtyxCNiieW_v6yW_5UucC0P4ZAOTcoSt7Ffp3M9EHMNF15XQjCMv8LYh9ZSGkzC3SzSTwzcayDJ7GquFm0MIL_F-j4_8Bvg9-5NB7PDWF3jrJP_PyrMBazLrR8nRqUDxXKOBZKsTIxtZCZaS93HhTk0fbhk1N14wwS8QC9BxxXkEmuw482HslRWuxZQeLrqx9CWik1JBpsIdzZT8P2AaxDpzBmFDN11P8LRzTQgsXCKX7SdJEPL-JrAvd5G_vgXq9NHLmLdSmQeonXRPX2pn9Vp6GLmQ6euIrodxXaStcDUp73TEfgrYqCdV0b8X-jqZpWDGneJ9CfnMPVsbC4J-fGWhR1I5MfVC67P4lkw2TtDMagBn-i1_vtYYgEw3vt-R3gIKnA">
+
+            </form>
+        </div>
+    </div>
+</div>
