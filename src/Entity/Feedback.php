@@ -81,5 +81,4 @@ class Feedback
     {
         $this->url = $url;
     }
-
 }

@@ -14,10 +14,9 @@ class HomepageController extends AbstractController
     #[Route('/', name: 'app_homepage', methods: ['GET'])]
     public function index(): Response
     {
-        return $this->render('homepage/index.html.twig', [
-            'controller_name' => 'HomepageController',
-        ]);
+        return $this->render('homepage/index.html.twig');
     }
+
     #[Route('/feedback', name: 'feedback', methods: ['POST'])]
     public function feedback(Request $request, EntityManagerInterface $sql)
     {
